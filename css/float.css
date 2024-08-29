@@ -5,32 +5,23 @@
     margin: 0 auto;   
 }
 
-.link {
-    margin: 20px;  
-}
-
-.link > a {
-    text-decoration: none;
-    color: brown;
-    font-size: 25px;
+.clear {
+    clear: both;
 }
 
 .section-1 {
-    font-size: 0;
     background: rgb(229, 157, 157);
 }
 
-.section-1 > div {
+.float-left {
     width: 400px;
     height: 400px;
     outline: 2px solid grey;
-    display: inline-block;
-    font-size: 20px;
     padding: 10px;
+    float: left;
 }
 
 .section-2 {
-    font-size: 0;
     background: rgb(120, 120, 220);
 }
 
@@ -40,8 +31,7 @@
 
 .section-wrap-1 {
     width: 800px;
-    display: inline-block;
-    font-size: 20px; 
+    float: left;
 }
 
 .section-wrap-1 > div {
@@ -51,9 +41,7 @@
 
 .section-wrap-2 {
     width: 400px;
-    display: inline-block;
-    font-size: 20px;
-    vertical-align: top;
+    float: left;
 }
 
 .section-wrap-2 > div {
@@ -62,7 +50,6 @@
 }
 
 .section-3 {
-    font-size: 0;
     background: rgb(101, 197, 101);
 }
 
@@ -72,17 +59,14 @@
 
 .section-3 > .part-1 {
     width: 400px;
-    display: inline-block;
-    font-size: 20px;
     height: 400px;
     padding: 15px;
+    float: left;
 }
 
 .part-2 {
     width: 800px;
-    display: inline-block;
-    font-size: 20px;
-    vertical-align: top;
+    float: left;
 }
 
 .part-2 > div {
@@ -94,7 +78,6 @@
 }
 
 .part-bottom {
-    font-size: 0;
     background: rgb(101, 197, 101);
 }
 
@@ -104,17 +87,14 @@
 
 .part-bottom > .part-L {
     width: 400px;
-    display: inline-block;
-    font-size: 20px;
     height: 200px;
     padding: 15px;
+    float: left;
 } 
 
 .part-R {
     width: 400px;
-    display: inline-block;
-    font-size: 20px;
-    vertical-align: top;
+    float: left;
 }
 
 .part-R > div {
