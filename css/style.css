@@ -1,0 +1,114 @@
+@import url('reset.css');
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.section-1 {
+    font-size: 0;
+    background: rgb(229, 157, 157);
+}
+
+.section-1 > div {
+    width: 400px;
+    height: 400px;
+    outline: 2px solid grey;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.section-2 {
+    font-size: 0;
+    background: rgb(120, 120, 220);
+}
+
+.section-2 div {
+    outline: 2px solid grey;
+}
+
+.section-wrap-1 {
+    width: 800px;
+    display: inline-block;
+    font-size: 20px; 
+}
+
+.section-wrap-1 > div {
+    height: 200px;
+    padding: 15px;
+}
+
+.section-wrap-2 {
+    width: 400px;
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.section-wrap-2 > div {
+    height: 133.333px;
+    padding: 15px;
+}
+
+.section-3 {
+    font-size: 0;
+    background: rgb(101, 197, 101);
+}
+
+.section-3 div {
+    outline: 2px solid grey;
+}
+
+.section-3 > .part-1 {
+    width: 400px;
+    display: inline-block;
+    font-size: 20px;
+    height: 400px;
+    padding: 15px;
+}
+
+.part-2 {
+    width: 800px;
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.part-2 > div {
+    height: 200px;
+}
+
+.part-top {
+    padding: 15px;
+}
+
+.part-bottom {
+    font-size: 0;
+    background: rgb(101, 197, 101);
+}
+
+.part-bottom div {
+    outline: 2px solid grey;
+}
+
+.part-bottom > .part-L {
+    width: 400px;
+    display: inline-block;
+    font-size: 20px;
+    height: 200px;
+    padding: 15px;
+} 
+
+.part-R {
+    width: 400px;
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.part-R > div {
+    height: 100px;
+    padding: 15px;
+}
