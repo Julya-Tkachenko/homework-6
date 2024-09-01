@@ -6,7 +6,7 @@
 }
 
 .link {
-    margin: 20px;  
+    margin: 10px;  
 }
 
 .link > a {
@@ -15,77 +15,86 @@
     font-size: 25px;
 }
 
+/* inline-block */
+
 .section-1 {
-    font-size: 0;
     background: rgb(229, 157, 157);
 }
 
+.section-1.inline-block {
+    font-size: 0;
+}
 .section-1 > div {
     width: 400px;
     height: 400px;
     outline: 2px solid grey;
-    display: inline-block;
-    font-size: 20px;
     padding: 10px;
 }
 
+.section-1.inline-block > div {
+    display: inline-block;
+    font-size: 20px;
+}
+
 .section-2 {
-    font-size: 0;
     background: rgb(120, 120, 220);
+}
+
+.section-2.inline-block {
+    font-size: 0;
 }
 
 .section-2 div {
     outline: 2px solid grey;
 }
 
-.section-wrap-1 {
+.section-2 .col-left {
     width: 800px;
-    display: inline-block;
-    font-size: 20px; 
 }
 
-.section-wrap-1 > div {
+.section-2 .col-left > div {
     height: 200px;
     padding: 15px;
 }
 
-.section-wrap-2 {
+.section-2 .col-right {
     width: 400px;
-    display: inline-block;
-    font-size: 20px;
-    vertical-align: top;
 }
 
-.section-wrap-2 > div {
+.section-2 .col-right > div {
     height: 133.333px;
     padding: 15px;
 }
 
+.inline-item {
+    display: inline-block;
+    font-size: 20px; 
+    vertical-align: top;
+}
+
 .section-3 {
-    font-size: 0;
     background: rgb(101, 197, 101);
+}
+
+.section-3.inline-block {
+    font-size: 0;
 }
 
 .section-3 div {
     outline: 2px solid grey;
 }
 
-.section-3 > .part-1 {
+.section-3 .part-1 {
     width: 400px;
-    display: inline-block;
-    font-size: 20px;
     height: 400px;
     padding: 15px;
 }
 
-.part-2 {
+.section-3 .part-2 {
     width: 800px;
-    display: inline-block;
-    font-size: 20px;
-    vertical-align: top;
 }
 
-.part-2 > div {
+.section-3 .part-2 > div {
     height: 200px;
 }
 
@@ -93,31 +102,46 @@
     padding: 15px;
 }
 
-.part-bottom {
+.part-bottom.inline-block {
     font-size: 0;
-    background: rgb(101, 197, 101);
 }
 
-.part-bottom div {
-    outline: 2px solid grey;
-}
-
-.part-bottom > .part-L {
+.part-bottom .part-left{
     width: 400px;
-    display: inline-block;
-    font-size: 20px;
     height: 200px;
     padding: 15px;
-} 
-
-.part-R {
-    width: 400px;
-    display: inline-block;
-    font-size: 20px;
-    vertical-align: top;
 }
 
-.part-R > div {
+.part-bottom .part-right {
+    width: 400px;
+}
+
+.part-bottom .part-right > div {
     height: 100px;
     padding: 15px;
 }
+
+/* float */
+
+
+.float:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.section-1.float > div {
+    float: left;
+}
+
+.float-left {
+    float: left;
+}
+
+/* flex */
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
